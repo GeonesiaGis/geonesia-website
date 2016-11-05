@@ -1,5 +1,6 @@
 export class App {
+	
   constructor() {
-    this.message = 'Hello World!';
+    this.message = 'Site en cours de développement';
   }
 }
