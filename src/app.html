@@ -1,16 +1,13 @@
 <template>
     <require from="bootstrap/css/bootstrap.css"></require>
     <require from="./styles.css"></require>
+    <require from="brand"></require>
+    <require from="navigation"></require>
 
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <span>Geonesia</span>
-            </a>
-        </div>
-    </nav>
+    <brand></brand>
 
     <div class="container">
+        <navigation class="row"></navigation>
         <div class="row">
             <router-view class="col-md-12"></router-view>
         </div>

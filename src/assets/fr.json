@@ -1,5 +1,13 @@
 ﻿{
-  "welcome": {
+  "brand": { "lang": "langue" },
+  "navigation": {
+    "home": "Acceuil",
+    "skills": "Compétences"
+  },
+  "home": {
     "message": "Bienvenue"
+  },
+  "skills": {
+    "mapping": "carthographie"
   }
 }
