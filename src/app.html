@@ -1,3 +1,18 @@
 <template>
-  <h1>${message}</h1>
+    <require from="bootstrap/css/bootstrap.css"></require>
+    <require from="./styles.css"></require>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span>Geonesia</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <router-view class="col-md-12"></router-view>
+        </div>
+    </div>
 </template>
