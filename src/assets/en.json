@@ -12,29 +12,29 @@
       "Geonesia was created in 2015 in Papeete (Tahiti), French polynesia,",
       "The company is spécialised in mapping and Geographical Information Systems",
       "Geonesia have the capability to use open source softwares beside commercial and proprietary solutions. It keep the company competitive ans affordable focused on human and local competencies.",
-      "Geonesia intervient dans les thématiques environnementales et de gestion territoriale pour la collecte, le traitement, l’analyse, l’archivage ou encore la diffusion de données spatialisées.",
-      "Son fondateur est géographe et à été formé à l’UPF. Il connait bien la Polynésie, son organisation et les enjeux pour son avenir. Un bon relationnel avec l’administration permet un dialogue ouvert avec les décideurs et favorise le bon déroulement des projets.",
-      "Des partenariats locaux et étrangers garantissent une réactivité importante et des compétences pointus dans ses domaines d’intervention."
+      "Geonesia works in environmental thematics and land managment for data collection, processing, analysing and diffusion of geospatial information.",
+      "His owner is geographer and begin his education at French Polynesia University. He know well polynesian islands, their organisation and issues for the future. A good relationship with the land administration permit a dialogue with decision-makers and foster the succesful conduct of projects.",
+      "Local and international partnerships ensure good reactivity  and sharpened competencies in its areas of intervention."
     ]
   },
   "about": {
     "text": [
-      "Aujourd’hui, Geonesia ne comporte qu’une seule personne",
-      "CV De Nicolas Ponzo"
+      "Today Geonesia have only one worker",
+      "Nicolas Ponzo Resume"
     ]
   },
   "mapping": {
     "text": [
-      "Du terrain au web en passant par le stockage et l’analyse",
-      "Avant même la collecte des données, de nombreuses configurations sont nécessaire afin de se conformer aux objectifs fixés.",
-      "De nombreux traitements sont nécessaires pour utiliser les données collectées sur le terrain, le stockage de la données doit être stable et nécessite une réelle réflexion quand à la modélisation des données.",
-      "Une fois stockées de façon stables, les données sont plus facilement exploitable au travers d’analyses mais aussi pour leur diffusion sur des supports web et mobil."
+      "From fiels to web thru data processing and storage.",
+      "Before data collection, plenty configurations are required to match needs and aims.",
+      "A lot of processing are needed to use data collected on the field, the storage must be stable and need a real modelisation.",
+      "Once stored in stable architecture, data are easily exploitable thru analyses and for the diffusion on web et mobil devices and solutions."
     ]
   },
   "references": {
     "text": [
-      "Enquête Filariose Moorea & ISLV – BPPI",
-      "SIG Web Communal (Adressage, déchets, Recensement…) – Commune de MOOREA",
+      "Filariasis survey in Moorea & ISLV – BPPI",
+      "City concils web GIS (Adresses, déchets, Recensement…) – Commune de MOOREA",
       "Atlas cartographique Eaux de baignade",
       "SIG Réseau de distribution Eau – Teoropaa",
       "Mise à jour de données des producteurs de l’administration de Polynésie française – Tefenua",
@@ -51,14 +51,14 @@
   },
   "technologies": {
     "text": [
-      "SIG Mobil - GPS / Tablettes",
+      "SIG Mobil - GPS / Tabs",
       "GeoOdk",
       "Qfield",
       "ArcPad",
-      "SIG Bureautique",
+      "Desktop GIS",
       "Qgis",
       "ArcGIS",
-      "SIG Web / webmapping",
+      "Web GIS / webmapping",
       "Lizmap",
       "Openlayers",
       "Geoserver",
