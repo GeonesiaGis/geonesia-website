@@ -1,21 +1,23 @@
 ﻿<template>
     <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <span>Geonesia</span>
-            </a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    ${data.lang}
-                    <span class="caret"></span>
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="../src/assets/logo.png" style="height:100%" title="Geonesia" />
                 </a>
-                <ul class="dropdown-menu">
-                    <li><a click.trigger="changeLang('fr')">fr</a></li>
-                    <li><a click.trigger="changeLang('en')">en</a></li>
-                </ul>
-            </li>
-        </ul>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        ${data.lang}
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a click.trigger="changeLang('fr')">fr</a></li>
+                        <li><a click.trigger="changeLang('en')">en</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </nav>
 </template>
