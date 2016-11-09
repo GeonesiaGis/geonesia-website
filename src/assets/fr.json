@@ -53,7 +53,10 @@
       "Recensement Général de la Population (Prérecesement GPS et cartographie opérationnelle de collecte) – ISPF",
       "Risque de collision des cétacées en méditerranée (modélisation et cartographie) – Ecoocean Institut",
       "Risque acridien à Madagascar, SIG d’alerte acridienne – CIRAD"
-    ]
+    ],
+	"legends": {
+		"ecoocean_hab_sw": "Image du risque de collision eco ocean"
+	}
   },
   "technologies": {
     "title": "Technologies",

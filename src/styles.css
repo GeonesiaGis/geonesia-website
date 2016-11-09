@@ -37,3 +37,12 @@ navigation {
 .content {
     font-family: 'Roboto', sans-serif;
 }
+
+/* images */
+.image {
+	text-align: center;
+}
+.image .legend {
+	font-style: italic;
+	color: #666666;
+}
