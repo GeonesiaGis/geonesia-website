@@ -1,13 +1,16 @@
 ﻿{
-  "brand": { "lang": "langue" },
-  "navigation": {
-    "home": "Acceuil",
-    "about": "A propos",
-    "mapping": "Carthographie",
-    "references": "Références",
-    "technologies": "Technologies"
+  "navbar": {
+    "lang": "Langue",
+    "navigation": {
+      "home": "Accueil",
+      "about": "A propos",
+      "mapping": "Cartographie",
+      "references": "Références",
+      "technologies": "Technologies"
+    }
   },
   "home": {
+    "title": "Accueil",
     "text": [
       "Geonesia a été créée en 2015 à Papeete (Tahiti), Polynésie française,",
       "La société est spécialisée dans la cartographie et les Systèmes d’Information Géographique",
@@ -18,12 +21,14 @@
     ]
   },
   "about": {
+    "title": "A propos",
     "text": [
       "Aujourd’hui, Geonesia ne comporte qu’une seule personne",
       "CV De Nicolas Ponzo"
     ]
   },
   "mapping": {
+    "title": "Cartographie",
     "text": [
       "Du terrain au web en passant par le stockage et l’analyse",
       "Avant même la collecte des données, de nombreuses configurations sont nécessaire afin de se conformer aux objectifs fixés.",
@@ -32,6 +37,7 @@
     ]
   },
   "references": {
+    "title": "Références",
     "text": [
       "Enquête Filariose Moorea & ISLV – BPPI",
       "SIG Web Communal (Adressage, déchets, Recensement…) – Commune de MOOREA",
@@ -50,6 +56,7 @@
     ]
   },
   "technologies": {
+    "title": "Technologies",
     "text": [
       "SIG Mobil - GPS / Tablettes",
       "GeoOdk",

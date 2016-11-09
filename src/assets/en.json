@@ -1,13 +1,16 @@
 ﻿{
-  "brand": { "lang": "language" },
-  "navigation": {
-    "home": "Home",
-    "about": "About",
-    "mapping": "Mapping",
-    "references": "References",
-    "technologies": "Technologies"
+  "navbar": {
+    "lang": "Language",
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "mapping": "Mapping",
+      "references": "References",
+      "technologies": "Technologies"
+    }
   },
   "home": {
+    "title": "Home",
     "text": [
       "Geonesia was created in 2015 in Papeete (Tahiti), French polynesia,",
       "The company is spécialised in mapping and Geographical Information Systems",
@@ -18,12 +21,14 @@
     ]
   },
   "about": {
+    "title": "About",
     "text": [
       "Today Geonesia have only one worker",
       "Nicolas Ponzo Resume"
     ]
   },
   "mapping": {
+    "title": "Mapping",
     "text": [
       "From fiels to web thru data processing and storage.",
       "Before data collection, plenty configurations are required to match needs and aims.",
@@ -32,6 +37,7 @@
     ]
   },
   "references": {
+    "title": "References",
     "text": [
       "Filariasis survey in Moorea & ISLV – BPPI",
       "City concils web GIS (Adresses, déchets, Recensement…) – Commune de MOOREA",
@@ -50,6 +56,7 @@
     ]
   },
   "technologies": {
+    "title": "Technologies",
     "text": [
       "SIG Mobil - GPS / Tabs",
       "GeoOdk",

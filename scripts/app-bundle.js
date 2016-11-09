@@ -409,13 +409,50 @@ define('resources/index',["exports"], function (exports) {
   exports.configure = configure;
   function configure(config) {}
 });
-define('text!about.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
+define('navbar',['exports', 'aurelia-framework', 'internationalization', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _internationalization, _aureliaEventAggregator) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.Navbar = undefined;
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var _dec, _class;
+
+    var Navbar = exports.Navbar = (_dec = (0, _aureliaFramework.inject)(_internationalization.Internationalization, _aureliaEventAggregator.EventAggregator), _dec(_class = function () {
+        function Navbar(internationalization, eventAggregator) {
+            var _this = this;
+
+            _classCallCheck(this, Navbar);
+
+            this.internationalization = internationalization;
+            this.eventAggregator = eventAggregator;
+            this.eventAggregator.subscribe(_internationalization.LangLoaded, function (msg) {
+                return _this.data = msg.data.navbar;
+            });
+        }
+
+        Navbar.prototype.changeLang = function changeLang(lang) {
+            this.eventAggregator.publish(new _internationalization.LangChanged(lang));
+        };
+
+        return Navbar;
+    }()) || _class);
+});
+define('text!about.html', ['module'], function(module) { module.exports = "<template>\r\n    <h1>${data.title}</h1>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
 define('text!styles.css', ['module'], function(module) { module.exports = ".navbar-default {\r\n    background-color: #ffffff;\r\n}\r\n\r\nbody {\r\n    background: url(\"/src/assets/tahiti_fhd.jpg\") no-repeat center center fixed;\r\n    -webkit-background-size: cover;\r\n    -moz-background-size: cover;\r\n    -o-background-size: cover;\r\n    background-size: cover;\r\n}\r\n\r\n.nav-pills > li > a,\r\nrouter-view {\r\n    border-radius: 4px;\r\n    background: rgba(255, 255, 255, 0.7);\r\n}\r\n\r\n.nav-pills > li > a {\r\n    font-size: 1.2em;\r\n}\r\n\r\nrouter-view {\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\r\n}\r\n\r\n/* fonts */\r\n@import url('https://fonts.googleapis.com/css?family=Roboto:300|Titillium+Web');\r\n\r\nbrand,\r\nnavigation {\r\n    font-family: 'Titillium Web', sans-serif;\r\n    font-weight: 300;\r\n}\r\n\r\n.content {\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n"; });
-define('text!app.html', ['module'], function(module) { module.exports = "<template>\r\n    <require from=\"bootstrap/css/bootstrap.css\"></require>\r\n    <require from=\"./styles.css\"></require>\r\n    <require from=\"brand\"></require>\r\n    <require from=\"navigation\"></require>\r\n\r\n    <brand></brand>\r\n\r\n    <div class=\"container\">\r\n        <navigation class=\"row\"></navigation>\r\n        <div class=\"row content\">\r\n            <router-view class=\"col-xs-12\"></router-view>\r\n        </div>\r\n    </div>\r\n</template>"; });
+define('text!app.html', ['module'], function(module) { module.exports = "<template>\r\n    <require from=\"bootstrap/css/bootstrap.css\"></require>\r\n    <require from=\"./styles.css\"></require>\r\n    <require from=\"navbar\"></require>\r\n    <require from=\"navigation\"></require>\r\n\r\n    <navbar></navbar>\r\n\r\n    <div class=\"container\">\r\n        <div class=\"row content\">\r\n            <router-view class=\"col-xs-12\"></router-view>\r\n        </div>\r\n    </div>\r\n</template>"; });
 define('text!brand.html', ['module'], function(module) { module.exports = "<template>\r\n    <nav class=\"navbar navbar-default\" role=\"navigation\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <a class=\"navbar-brand\" href=\"#\">\r\n                    <img src=\"../src/assets/logo.png\" style=\"height:100%\" title=\"Geonesia\" />\r\n                </a>\r\n            </div>\r\n            <ul class=\"nav navbar-nav navbar-right\">\r\n                <li class=\"dropdown\">\r\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\">\r\n                        ${data.lang}\r\n                        <span class=\"caret\"></span>\r\n                    </a>\r\n                    <ul class=\"dropdown-menu\">\r\n                        <li><a click.trigger=\"changeLang('fr')\">fr</a></li>\r\n                        <li><a click.trigger=\"changeLang('en')\">en</a></li>\r\n                    </ul>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </nav>\r\n</template>"; });
-define('text!home.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>\r\n"; });
-define('text!mapping.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
+define('text!home.html', ['module'], function(module) { module.exports = "<template>\r\n    <h1>${data.title}</h1>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>\r\n"; });
+define('text!mapping.html', ['module'], function(module) { module.exports = "<template>\r\n    <h1>${data.title}</h1>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
 define('text!navigation.html', ['module'], function(module) { module.exports = "<template>\r\n    <ul class=\"nav nav-pills\">\r\n        <li><a route-href=\"route: home;\">${data.home}</a></li>\r\n        <li><a route-href=\"route: about;\">${data.about}</a></li>\r\n        <li><a route-href=\"route: mapping;\">${data.mapping}</a></li>\r\n        <li><a route-href=\"route: references;\">${data.references}</a></li>\r\n        <li><a route-href=\"route: technologies;\">${data.technologies}</a></li>\r\n    </ul>\r\n</template>"; });
-define('text!references.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
-define('text!technologies.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
+define('text!references.html', ['module'], function(module) { module.exports = "<template>\r\n    <h1>${data.title}</h1>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
+define('text!technologies.html', ['module'], function(module) { module.exports = "<template>\r\n    <h1>${data.title}</h1>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
+define('text!navbar.html', ['module'], function(module) { module.exports = "<template>\r\n    <nav class=\"navbar navbar-default\" role=\"navigation\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <a class=\"navbar-brand\" href=\"#\">\r\n                    <img src=\"../src/assets/logo.png\" style=\"height:100%\" title=\"Geonesia\" />\r\n                </a>\r\n            </div>\r\n            <ul class=\"nav navbar-nav navbar-right\">\r\n                <li><a route-href=\"route: home;\">${data.navigation.home}</a></li>\r\n                <li><a route-href=\"route: about;\">${data.navigation.about}</a></li>\r\n                <li><a route-href=\"route: mapping;\">${data.navigation.mapping}</a></li>\r\n                <li><a route-href=\"route: references;\">${data.navigation.references}</a></li>\r\n                <li><a route-href=\"route: technologies;\">${data.navigation.technologies}</a></li>\r\n                <li class=\"dropdown\">\r\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\">\r\n                        ${data.lang}\r\n                        <span class=\"caret\"></span>\r\n                    </a>\r\n                    <ul class=\"dropdown-menu\">\r\n                        <li><a click.trigger=\"changeLang('fr')\">fr</a></li>\r\n                        <li><a click.trigger=\"changeLang('en')\">en</a></li>\r\n                    </ul>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </nav>\r\n</template>"; });
 //# sourceMappingURL=app-bundle.js.map
