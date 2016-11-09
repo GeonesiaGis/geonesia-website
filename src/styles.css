@@ -1,1 +1,39 @@
-﻿
+﻿.navbar-default {
+    background-color: #ffffff;
+}
+
+body {
+    background: url("/src/assets/tahiti_fhd.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-pills > li > a,
+router-view {
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.nav-pills > li > a {
+    font-size: 1.2em;
+}
+
+router-view {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Titillium+Web');
+
+brand,
+navigation {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+
+.content {
+    font-family: 'Roboto', sans-serif;
+}
