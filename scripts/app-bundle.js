@@ -264,6 +264,42 @@ define('main',['exports', './environment'], function (exports, _environment) {
         });
     }
 });
+define('mapping',['exports', 'aurelia-framework', 'internationalization', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _internationalization, _aureliaEventAggregator) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.Mapping = undefined;
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var _dec, _class;
+
+    var Mapping = exports.Mapping = (_dec = (0, _aureliaFramework.inject)(_internationalization.Internationalization, _aureliaEventAggregator.EventAggregator), _dec(_class = function () {
+        function Mapping(internationalization, eventAggregator) {
+            var _this = this;
+
+            _classCallCheck(this, Mapping);
+
+            this.internationalization = internationalization;
+            this.eventAggregator = eventAggregator;
+            this.eventAggregator.subscribe(_internationalization.LangLoaded, function (msg) {
+                return _this.data = msg.data.mapping;
+            });
+        }
+
+        Mapping.prototype.attached = function attached() {
+            this.internationalization.reload();
+        };
+
+        return Mapping;
+    }()) || _class);
+});
 define('navigation',['exports', 'aurelia-framework', 'internationalization', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _internationalization, _aureliaEventAggregator) {
     'use strict';
 
@@ -291,6 +327,42 @@ define('navigation',['exports', 'aurelia-framework', 'internationalization', 'au
             return _this.data = msg.data.navigation;
         });
     }) || _class);
+});
+define('references',['exports', 'aurelia-framework', 'internationalization', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _internationalization, _aureliaEventAggregator) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.References = undefined;
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var _dec, _class;
+
+    var References = exports.References = (_dec = (0, _aureliaFramework.inject)(_internationalization.Internationalization, _aureliaEventAggregator.EventAggregator), _dec(_class = function () {
+        function References(internationalization, eventAggregator) {
+            var _this = this;
+
+            _classCallCheck(this, References);
+
+            this.internationalization = internationalization;
+            this.eventAggregator = eventAggregator;
+            this.eventAggregator.subscribe(_internationalization.LangLoaded, function (msg) {
+                return _this.data = msg.data.references;
+            });
+        }
+
+        References.prototype.attached = function attached() {
+            this.internationalization.reload();
+        };
+
+        return References;
+    }()) || _class);
 });
 define('technologies',['exports', 'aurelia-framework', 'internationalization', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _internationalization, _aureliaEventAggregator) {
     'use strict';
@@ -337,159 +409,13 @@ define('resources/index',["exports"], function (exports) {
   exports.configure = configure;
   function configure(config) {}
 });
-define('about - Copy',['exports', 'aurelia-framework', 'internationalization', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _internationalization, _aureliaEventAggregator) {
-    'use strict';
-
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-    exports.About = undefined;
-
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
-
-    var _dec, _class;
-
-    var About = exports.About = (_dec = (0, _aureliaFramework.inject)(_internationalization.Internationalization, _aureliaEventAggregator.EventAggregator), _dec(_class = function () {
-        function About(internationalization, eventAggregator) {
-            var _this = this;
-
-            _classCallCheck(this, About);
-
-            this.internationalization = internationalization;
-            this.eventAggregator = eventAggregator;
-            this.eventAggregator.subscribe(_internationalization.LangLoaded, function (msg) {
-                return _this.data = msg.data.about;
-            });
-        }
-
-        About.prototype.attached = function attached() {
-            this.internationalization.reload();
-        };
-
-        return About;
-    }()) || _class);
-});
-define('mapping',['exports', 'aurelia-framework', 'internationalization', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _internationalization, _aureliaEventAggregator) {
-    'use strict';
-
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-    exports.Mapping = undefined;
-
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
-
-    var _dec, _class;
-
-    var Mapping = exports.Mapping = (_dec = (0, _aureliaFramework.inject)(_internationalization.Internationalization, _aureliaEventAggregator.EventAggregator), _dec(_class = function () {
-        function Mapping(internationalization, eventAggregator) {
-            var _this = this;
-
-            _classCallCheck(this, Mapping);
-
-            this.internationalization = internationalization;
-            this.eventAggregator = eventAggregator;
-            this.eventAggregator.subscribe(_internationalization.LangLoaded, function (msg) {
-                return _this.data = msg.data.mapping;
-            });
-        }
-
-        Mapping.prototype.attached = function attached() {
-            this.internationalization.reload();
-        };
-
-        return Mapping;
-    }()) || _class);
-});
-define('mapping - Copy',['exports', 'aurelia-framework', 'internationalization', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _internationalization, _aureliaEventAggregator) {
-    'use strict';
-
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-    exports.Mapping = undefined;
-
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
-
-    var _dec, _class;
-
-    var Mapping = exports.Mapping = (_dec = (0, _aureliaFramework.inject)(_internationalization.Internationalization, _aureliaEventAggregator.EventAggregator), _dec(_class = function () {
-        function Mapping(internationalization, eventAggregator) {
-            var _this = this;
-
-            _classCallCheck(this, Mapping);
-
-            this.internationalization = internationalization;
-            this.eventAggregator = eventAggregator;
-            this.eventAggregator.subscribe(_internationalization.LangLoaded, function (msg) {
-                return _this.data = msg.data.mapping;
-            });
-        }
-
-        Mapping.prototype.attached = function attached() {
-            this.internationalization.reload();
-        };
-
-        return Mapping;
-    }()) || _class);
-});
-define('references',['exports', 'aurelia-framework', 'internationalization', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _internationalization, _aureliaEventAggregator) {
-    'use strict';
-
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-    exports.References = undefined;
-
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
-
-    var _dec, _class;
-
-    var References = exports.References = (_dec = (0, _aureliaFramework.inject)(_internationalization.Internationalization, _aureliaEventAggregator.EventAggregator), _dec(_class = function () {
-        function References(internationalization, eventAggregator) {
-            var _this = this;
-
-            _classCallCheck(this, References);
-
-            this.internationalization = internationalization;
-            this.eventAggregator = eventAggregator;
-            this.eventAggregator.subscribe(_internationalization.LangLoaded, function (msg) {
-                return _this.data = msg.data.references;
-            });
-        }
-
-        References.prototype.attached = function attached() {
-            this.internationalization.reload();
-        };
-
-        return References;
-    }()) || _class);
-});
 define('text!about.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
 define('text!styles.css', ['module'], function(module) { module.exports = ""; });
 define('text!app.html', ['module'], function(module) { module.exports = "<template>\r\n    <require from=\"bootstrap/css/bootstrap.css\"></require>\r\n    <require from=\"./styles.css\"></require>\r\n    <require from=\"brand\"></require>\r\n    <require from=\"navigation\"></require>\r\n\r\n    <brand></brand>\r\n\r\n    <div class=\"container\">\r\n        <navigation class=\"row\"></navigation>\r\n        <div class=\"row\">\r\n            <router-view class=\"col-md-12\"></router-view>\r\n        </div>\r\n    </div>\r\n</template>"; });
 define('text!brand.html', ['module'], function(module) { module.exports = "<template>\r\n    <nav class=\"navbar navbar-default\" role=\"navigation\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <a class=\"navbar-brand\" href=\"#\">\r\n                    <img src=\"../src/assets/logo.png\" style=\"height:100%\" title=\"Geonesia\" />\r\n                </a>\r\n            </div>\r\n            <ul class=\"nav navbar-nav navbar-right\">\r\n                <li class=\"dropdown\">\r\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\">\r\n                        ${data.lang}\r\n                        <span class=\"caret\"></span>\r\n                    </a>\r\n                    <ul class=\"dropdown-menu\">\r\n                        <li><a click.trigger=\"changeLang('fr')\">fr</a></li>\r\n                        <li><a click.trigger=\"changeLang('en')\">en</a></li>\r\n                    </ul>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </nav>\r\n</template>"; });
 define('text!home.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>\r\n"; });
-define('text!navigation.html', ['module'], function(module) { module.exports = "<template>\r\n    <ul class=\"nav nav-pills\">\r\n        <li><a route-href=\"route: home;\">${data.home}</a></li>\r\n        <li><a route-href=\"route: about;\">${data.about}</a></li>\r\n        <li><a route-href=\"route: mapping;\">${data.mapping}</a></li>\r\n        <li><a route-href=\"route: references;\">${data.references}</a></li>\r\n        <li><a route-href=\"route: technologies;\">${data.technologies}</a></li>\r\n    </ul>\r\n</template>"; });
-define('text!technologies.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
-define('text!about - Copy.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
 define('text!mapping.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
-define('text!mapping - Copy.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
+define('text!navigation.html', ['module'], function(module) { module.exports = "<template>\r\n    <ul class=\"nav nav-pills\">\r\n        <li><a route-href=\"route: home;\">${data.home}</a></li>\r\n        <li><a route-href=\"route: about;\">${data.about}</a></li>\r\n        <li><a route-href=\"route: mapping;\">${data.mapping}</a></li>\r\n        <li><a route-href=\"route: references;\">${data.references}</a></li>\r\n        <li><a route-href=\"route: technologies;\">${data.technologies}</a></li>\r\n    </ul>\r\n</template>"; });
 define('text!references.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
+define('text!technologies.html', ['module'], function(module) { module.exports = "<template>\r\n    <p repeat.for=\"t of data.text\">${t}</p>\r\n</template>"; });
 //# sourceMappingURL=app-bundle.js.map
