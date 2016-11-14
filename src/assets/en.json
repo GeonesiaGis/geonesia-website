@@ -3,10 +3,9 @@
     "lang": "Language",
     "navigation": {
       "home": "Home",
-      "about": "About",
-      "mapping": "Mapping",
+      "services": "Services",
       "references": "References",
-      "technologies": "Technologies"
+      "resources": "Resources"
     }
   },
   "home": {

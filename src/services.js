@@ -3,12 +3,12 @@ import {Internationalization, LangLoaded} from 'internationalization';
 import {EventAggregator} from 'aurelia-event-aggregator';
 
 @inject(Internationalization, EventAggregator)
-export class About {
+export class Services {
 
     constructor(internationalization, eventAggregator) {
         this.internationalization = internationalization;
         this.eventAggregator = eventAggregator;
-        this.eventAggregator.subscribe(LangLoaded, msg => this.data = msg.data.about);
+        this.eventAggregator.subscribe(LangLoaded, msg => this.data = msg.data.services);
     }
 
     attached() {

@@ -3,21 +3,19 @@
     "lang": "Langue",
     "navigation": {
       "home": "Accueil",
-      "about": "A propos",
-      "mapping": "Cartographie",
+      "services": "Services",
       "references": "Références",
-      "technologies": "Technologies"
+      "resources": "Ressources"
     }
   },
   "home": {
     "title": "Accueil",
     "text": [
-      "Geonesia a été créée en 2015 à Papeete (Tahiti), Polynésie française,",
-      "La société est spécialisée dans la cartographie et les Systèmes d’Information Géographique",
+      "Geonesia bureau d’études géographiques spécialisée en cartographie et Systèmes d’Information Géographique a été créée en 2015 à Papeete - Tahiti, Polynésie française.",
       "Sa capacité à utiliser les logiciels libre en compléments de l’offre propriétaire commerciale permet de proposer une offre concurrentielle et abordable focalisée sur les compétences humaines locales.",
-      "Geonesia intervient dans les thématiques environnementales et de gestion territoriale pour la collecte, le traitement, l’analyse, l’archivage ou encore la diffusion de données spatialisées.",
-      "Son fondateur est géographe et à été formé à l’UPF. Il connait bien la Polynésie, son organisation et les enjeux pour son avenir. Un bon relationnel avec l’administration permet un dialogue ouvert avec les décideurs et favorise le bon déroulement des projets.",
-      "Des partenariats locaux et étrangers garantissent une réactivité importante et des compétences pointus dans ses domaines d’intervention."
+      "L’entreprise intervient dans des thématiques transversales (environnement, gestion territoriale, réseaux…) tant au niveau de la collecte, du traitement, de l’analyse, de l’archivage ou encore de la diffusion de données spatialisées.",
+      "Son fondateur, géographe et géomaticien connait bien la Polynésie, son organisation et ses enjeux.",
+      "Un bon relationnel avec l’administration permet un dialogue ouvert avec les décideurs et favorise le bon déroulement des projets. Des partenariats locaux et étrangers garantissent une réactivité importante et des compétences pointus dans ses domaines d’intervention."
     ]
   },
   "about": {

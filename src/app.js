@@ -9,23 +9,19 @@ export class App {
               name: 'home'
           },
           {
-              route: 'about',
-              moduleId: 'about', 
-              name: 'about'
+              route: 'serives',
+              moduleId: 'services', 
+              name: 'services'
           },
-          { 
-              route: 'mapping',   
-              moduleId: 'mapping',
-              name: 'mapping' },
           {
               route: 'references',  
               moduleId: 'references',
               name: 'references' 
           },
           { 
-              route: 'technologies',  
-              moduleId: 'technologies',
-              name: 'technologies'
+              route: 'resources',  
+              moduleId: 'resources',
+              name: 'resources'
           }
         ]);
 
