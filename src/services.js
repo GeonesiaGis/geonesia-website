@@ -1,6 +1,7 @@
 ﻿import {inject} from 'aurelia-framework';
 import {Internationalization, LangLoaded} from 'internationalization';
 import {EventAggregator} from 'aurelia-event-aggregator';
+import 'bootstrap';
 
 @inject(Internationalization, EventAggregator)
 export class Services {
@@ -14,5 +15,4 @@ export class Services {
     attached() {
         this.internationalization.reload();
     }
-
 }

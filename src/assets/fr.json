@@ -11,18 +11,105 @@
   "home": {
     "title": "Accueil",
     "text": [
-      "Geonesia bureau d’études géographiques spécialisée en cartographie et Systèmes d’Information Géographique a été créée en 2015 à Papeete - Tahiti, Polynésie française.",
-      "Sa capacité à utiliser les logiciels libre en compléments de l’offre propriétaire commerciale permet de proposer une offre concurrentielle et abordable focalisée sur les compétences humaines locales.",
-      "L’entreprise intervient dans des thématiques transversales (environnement, gestion territoriale, réseaux…) tant au niveau de la collecte, du traitement, de l’analyse, de l’archivage ou encore de la diffusion de données spatialisées.",
+      "Geonesia bureau d’études géographiques spécialisée en cartographie et Systèmes d'Information Géographique a été créée en 2015 à Papeete - Tahiti, Polynésie française.",
+      "Sa capacité à utiliser les logiciels libre en compléments de l'offre propriétaire commerciale permet de proposer une offre concurrentielle et abordable focalisée sur les compétences humaines locales.",
+      "L'entreprise intervient dans des thématiques transversales (environnement, gestion territoriale, réseaux…) tant au niveau de la collecte, du traitement, de l'analyse, de l'archivage ou encore de la diffusion de données spatialisées.",
       "Son fondateur, géographe et géomaticien connait bien la Polynésie, son organisation et ses enjeux.",
-      "Un bon relationnel avec l’administration permet un dialogue ouvert avec les décideurs et favorise le bon déroulement des projets. Des partenariats locaux et étrangers garantissent une réactivité importante et des compétences pointus dans ses domaines d’intervention."
+      "Un bon relationnel avec l'administration permet un dialogue ouvert avec les décideurs et favorise le bon déroulement des projets. Des partenariats locaux et étrangers garantissent une réactivité importante et des compétences pointus dans ses domaines d'intervention."
     ]
   },
-  "about": {
-    "title": "A propos",
-    "text": [
-      "Aujourd’hui, Geonesia ne comporte qu’une seule personne",
-      "CV De Nicolas Ponzo"
+  "services": {
+    "title": "Services",
+    "more": "en détails",
+    "services": [
+      {
+        "title": "Collecte",
+        "text": "blabla",
+        "modal": {
+          "title": "Références liées à la collecte",
+          "close": "fermer"
+        },
+        "references": [
+          {
+            "title": "ref 1",
+            "text": "ref 1 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 2",
+            "text": "ref 2 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 3",
+            "text": "ref 3 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          }
+        ]
+      },
+      {
+        "title": "Stockage/Analyse",
+        "text": "blabla",
+        "modal": {
+          "title": "Références liées à l'analyse de données",
+          "close": "fermer"
+        },
+        "references": [
+          {
+            "title": "ref 1",
+            "text": "ref 1 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 2",
+            "text": "ref 2 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 3",
+            "text": "ref 3 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          }
+        ]
+      },
+      {
+        "title": "Diffusion",
+        "text": "blabla",
+        "modal": {
+          "title": "Références liées à la diffusion de données",
+          "close": "fermer"
+        },
+        "references": [
+          {
+            "title": "ref 1",
+            "text": "ref 1 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 2",
+            "text": "ref 2 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 3",
+            "text": "ref 3 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          }
+        ]
+      },
+      {
+        "title": "Formation",
+        "text": "blabla",
+        "modal": {
+          "title": "Références liées à la formation",
+          "close": "fermer"
+        },
+        "references": [
+          {
+            "title": "ref 1",
+            "text": "ref 1 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 2",
+            "text": "ref 2 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 3",
+            "text": "ref 3 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          }
+        ]
+      }
     ]
   },
   "mapping": {

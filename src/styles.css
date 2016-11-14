@@ -10,14 +10,9 @@ body {
     background-size: cover;
 }
 
-.nav-pills > li > a,
-router-view {
+.glass {
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.7);
-}
-
-.nav-pills > li > a {
-    font-size: 1.2em;
 }
 
 router-view {
