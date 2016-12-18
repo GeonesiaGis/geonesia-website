@@ -1,8 +1,42 @@
 ﻿<template>
-    <h1>${data.title}</h1>
-    <p repeat.for="t of data.text">${t}</p>
-	<div class="image">
-		<img id="ecoocean_hab_sw" src="../src/assets/ecoocean_hab_sw.jpg"/><br/>
-		<span class="legend">${data.legends.ecoocean_hab_sw}</span>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 glass">
+				<h1>${data.title}</h1>
+				<p repeat.for="t of data.text">${t}</p>
+				<div class="image">
+					<img id="bppi_geoodk_carto_raster" src="../src/assets/bppi_geoodk_carto_raster.jpg" height="150px"/>
+					<img id="bppi_geoodk_formulaire" src="../src/assets/bppi_geoodk_formulaire.jpg" height="150px"/>
+					<img id="bppi_atlas_retour_terrain" src="../src/assets/bppi_atlas_retour_terrain.jpg" height="150px"/>
+					<img id="bppi_carte_ensemble_retour_terrain" src="../src/assets/bppi_carte_ensemble_retour_terrain.jpg" height="150px"/><br/>
+					<span class="legend">${data.legends.bppi}</span>
+				</div>
+				<div class="image">
+					<img id="moorea_connexion" src="../src/assets/moorea_connexion.jpg" height="150px"/>
+					<img id="moorea_vignettes" src="../src/assets/moorea_vignettes.jpg" height="150px"/>
+					<img id="moorea_couches_infobulle" src="../src/assets/moorea_couches_infobulle.jpg" height="150px"/>
+					<img id="moorea_edition_localisation" src="../src/assets/moorea_edition_localisation.jpg" height="150px"/><br/>
+					<span class="legend">${data.legends.moorea}</span>
+				</div>
+				<div class="image">
+					<img id="chsp_atlas_eaux_baignade" src="../src/assets/chsp_atlas_eaux_baignade.jpg" height="150px"/>
+					<img id="chsp_projet_qgis" src="../src/assets/chsp_projet_qgis.jpg" height="150px"/>
+					<img id="chsp_taaone" src="../src/assets/chsp_taaone.jpg" height="150px"/><br/>
+					<span class="legend">${data.legends.chsp}</span>
+				</div>
+				<div class="image">
+					<img id="teoropaa_index" src="../src/assets/teoropaa_index.jpg" height="150px"/>
+					<img id="teoropaa_sig_geosignets" src="../src/assets/teoropaa_sig_geosignets.jpg" height="150px"/>
+					<img id="teoropaa_sig_detail" src="../src/assets/teoropaa_sig_detail.jpg" height="150px"/>
+					<img id="teoropaa_sig_detail_infobulle" src="../src/assets/teoropaa_sig_detail_infobulle.jpg" height="150px"/><br/>
+					<span class="legend">${data.legends.teoropaa}</span>
+				</div>
+				<div class="image">
+					<img id="tefenua_interface_web" src="../src/assets/tefenua_interface_web.jpg" height="150px"/>
+					<img id="tefenua_metadonnees" src="../src/assets/tefenua_metadonnees.jpg" height="150px"/><br/>
+					<span class="legend">${data.legends.tefenua}</span>
+				</div>				
+			</div>
+		</div>
 	</div>
 </template>

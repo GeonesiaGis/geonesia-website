@@ -9,7 +9,7 @@ export class App {
               name: 'home'
           },
           {
-              route: 'serives',
+              route: 'services',
               moduleId: 'services', 
               name: 'services'
           },

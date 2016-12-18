@@ -17,24 +17,105 @@
       "Geonesia works in environmental thematics and land managment for data collection, processing, analysing and diffusion of geospatial information.",
       "His owner is geographer and begin his education at French Polynesia University. He know well polynesian islands, their organisation and issues for the future. A good relationship with the land administration permit a dialogue with decision-makers and foster the succesful conduct of projects.",
       "Local and international partnerships ensure good reactivity  and sharpened competencies in its areas of intervention."
+    ],
+		"legends": {
+		"mosaique_home_hor": "Collect, storage, analyse and diffusion of geographic data"
+	}
+  },"services": {
+    "title": "Services",
+    "more": "more",
+    "services": [
+      {
+        "title": "Collecte",
+        "text": "blabla",
+        "modal": {
+          "title": "References related to data collection",
+          "close": "close"
+        },
+        "references": [
+          {
+            "title": "ref 1",
+            "text": "ref 1 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 2",
+            "text": "ref 2 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 3",
+            "text": "ref 3 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          }
+        ]
+      },
+      {
+        "title": "Stockage/Analyse",
+        "text": "blabla",
+        "modal": {
+          "title": "Références liées à l'analyse de données",
+          "close": "fermer"
+        },
+        "references": [
+          {
+            "title": "ref 1",
+            "text": "ref 1 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 2",
+            "text": "ref 2 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 3",
+            "text": "ref 3 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          }
+        ]
+      },
+      {
+        "title": "Diffusion",
+        "text": "blabla",
+        "modal": {
+          "title": "Références liées à la diffusion de données",
+          "close": "fermer"
+        },
+        "references": [
+          {
+            "title": "ref 1",
+            "text": "ref 1 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 2",
+            "text": "ref 2 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 3",
+            "text": "ref 3 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          }
+        ]
+      },
+      {
+        "title": "Formation",
+        "text": "blabla",
+        "modal": {
+          "title": "Références liées à la formation",
+          "close": "fermer"
+        },
+        "references": [
+          {
+            "title": "ref 1",
+            "text": "ref 1 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 2",
+            "text": "ref 2 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          },
+          {
+            "title": "ref 3",
+            "text": "ref 3 text. Amazing stuff. Really. This is big man. Everyone shoud do it."
+          }
+        ]
+      }
     ]
   },
-  "about": {
-    "title": "About",
-    "text": [
-      "Today Geonesia have only one worker",
-      "Nicolas Ponzo Resume"
-    ]
-  },
-  "mapping": {
-    "title": "Mapping",
-    "text": [
-      "From fiels to web thru data processing and storage.",
-      "Before data collection, plenty configurations are required to match needs and aims.",
-      "A lot of processing are needed to use data collected on the field, the storage must be stable and need a real modelisation.",
-      "Once stored in stable architecture, data are easily exploitable thru analyses and for the diffusion on web et mobil devices and solutions."
-    ]
-  },
+  
   "references": {
     "title": "References",
     "text": [

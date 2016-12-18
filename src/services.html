@@ -5,14 +5,19 @@
             <div class="col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">${data.title}</div>
+					<p>${data.text}</p>
                 </div>
             </div>
 
             <div class="col-xs-12 col-md-6" repeat.for="service of data.services">
                 <div class="panel panel-default">
-                    <div class="panel-heading">${service.title}</div>
+                    <div class="panel-heading">${service.title}
+					</div>
                     <div class="panel-body">
+					
                         <p>${service.text}</p>
+						
+
                         <ul>
                             <li repeat.for="reference of service.references">${reference.title}</li>
                         </ul>
@@ -30,7 +35,10 @@
                                         <div repeat.for="reference of service.references">
                                             <h3>${reference.title}</h3>
                                             <p>${reference.text}</p>
-                                        </div>                                        
+                                            <p>${reference.image}</p>
+                                        </div> 
+										<img id="mosaique_home" src="../src/assets/mosaique_home.jpg" height="150px"/><br/>
+										<span class="legend">${data.legends.mosaique_home}</span>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">${service.modal.close}</button>
@@ -38,6 +46,7 @@
                                 </div><!-- /.modal-content -->
                             </div><!-- /.modal-dialog -->
                         </div><!-- /.modal -->
+
                     </div>
                 </div>
             </div>
