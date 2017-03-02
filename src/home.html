@@ -1,13 +1,17 @@
 ﻿<template>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 glass">
-                <h1>${data.title}</h1>
-                <p repeat.for="t of data.text">${t}</p>
-				<div class="image">
-					<img id="mosaique_home_hor" src="../src/assets/mosaique_home_hor.jpg"/><br/>
-					<span class="legend">${data.legends.mosaique_home_hor}</span>					
-				</div>			
+            <div class="col-xs-12">
+                <div class="panel panel-default glass">
+                    <div class="panel-heading">${data.title}</div>
+                    <div class="panel-body">
+                        <p repeat.for="t of data.text">${t}</p>
+                        <div class="image">
+                            <img id="mosaique_home_hor" src="../src/assets/mosaique_home_hor.jpg" /><br />
+                            <span class="legend">${data.legends.mosaique_home_hor}</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

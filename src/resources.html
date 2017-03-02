@@ -1,11 +1,12 @@
 ﻿<template>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 glass">
-				<h1>${data.title}</h1>
-				<p repeat.for="t of data.text">${t}</p>			
-			</div>
-		</div>
-	</div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default glass">
+                    <div class="panel-heading">${data.title}</div>
+                    <div class="panel-body"><p repeat.for="t of data.text">${t}</p>	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
