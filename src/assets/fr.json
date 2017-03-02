@@ -17,21 +17,21 @@
       "Son fondateur, géographe et géomaticien connait bien la Polynésie, son organisation et ses enjeux.",
       "Un bon relationnel avec l'administration permet un dialogue ouvert avec les décideurs et favorise le bon déroulement des projets. Des partenariats locaux et étrangers garantissent une réactivité importante et des compétences pointus dans ses domaines d'intervention."
     ],
-	"legends": {
-		"mosaique_home_hor": "Collecte, stockage, analyse et diffusion des données géographiques"
-		}
+    "legends": {
+      "mosaique_home_hor": "Collecte, stockage, analyse et diffusion des données géographiques"
+    }
   },
   "services": {
     "title": "Services",
-	"text": "GEONESIA propose des prestations de service en collecte de données de terrain (Tablettes GPS), archivage et stockage des informations en bases de données de type PostgreSQL. Des analyses spatiales et attributaires (SQL) sont réalisées notamment via les formats de fichier standard (.shp, .json...). Enfin, les informations géographiques peuvent être diffusées via des applications web. GEONESIA propose des offres de formation afin de vous rendre autonome dans la collecte et l'exploitation de vos données géographiques",
+    "text": "GEONESIA propose des prestations de service en collecte de données de terrain (Tablettes GPS), archivage et stockage des informations en bases de données de type PostgreSQL. Des analyses spatiales et attributaires (SQL) sont réalisées notamment via les formats de fichier standard (.shp, .json...). Enfin, les informations géographiques peuvent être diffusées via des applications web. GEONESIA propose des offres de formation afin de vous rendre autonome dans la collecte et l'exploitation de vos données géographiques",
     "more": "en détails",
     "services": [
       {
         "title": "Collecte",
         "text": [
-		  "La collecte de données permet de constituer des bases de données d'aide à la décision qui permettront aux gestionnaires du territoire de disposer de données de terrain à jour. La constitution des bases de données peut se faire via des cartes au format papier ou via des technologies numériques facilitant la collecte et évitant le risque d'erreur de saisie. La communication vers les bases de données et l'intégration des données de terrain est donc améliorée.",
-		  "Quelques références :"
-		],
+          "La collecte de données permet de constituer des bases de données d'aide à la décision qui permettront aux gestionnaires du territoire de disposer de données de terrain à jour. La constitution des bases de données peut se faire via des cartes au format papier ou via des technologies numériques facilitant la collecte et évitant le risque d'erreur de saisie. La communication vers les bases de données et l'intégration des données de terrain est donc améliorée.",
+          "Quelques références :"
+        ],
         "modal": {
           "title": "Références liées à la collecte",
           "close": "fermer"
@@ -40,12 +40,12 @@
           {
             "title": "BPPI - Enquête GPS pour la prévalence de la filariose lymphatique",
             "text": "Enquête GPS avec prélèvement sanguin sur un échantillon de population dans le cadre de l'enquête de prévalence de la filariose lymphatique sur Moorea et les Îles sous le vent.",
-			"image": "une image"
+            "image": "../src/assets/bppi_geoodk_carto_raster_popup.png"
           },
           {
             "title": "SDR - Recensement Général Agricole",
             "text": "Enquête de terrain pour le recensement des cultures",
-			"image": "une autre image"
+            "image": "une autre image"
           },
           {
             "title": "ISPF - Recensement Général de la Population",
@@ -137,38 +137,129 @@
       }
     ]
   },
-
   "references": {
     "title": "Références",
-    "text": [
-      "Apppui cartographique dans la mise en œuvre de l’enquête de prévalence de la filariose lymphatique en population generale a moorea et aux iles-sous-le-vent – Ministère de la Santé",
-      "Mise en place d'un SIG web Communal pour la gestion de l'adressage, des déchets et du Recensement – Commune de Moorea-Maiao",
-      "Réalisation d'un atlas cartographique automatique pour la gestion de la qualité des eaux de baignade - Centre d'Hygiène et de Salubrité Publique",
-      "Configuration d'un SIG pour la gestion du réseau de distribution de l'eau sur les communes de Faa'a, Punaauia et Paea – Syndicat d'eau Teoropaa",
-      "Compilation et mise à jour de la base de données PostGIS et métadonnées des producteurs de données spatialisées pour l'application SIG web Tefenu@ de l’administration de Polynésie française – Service de l'Informatique de la Polynésie française",
-      "Gestion du projet de mise en place du Système d’Informations Agricoles (SIA) pour la gestion des agriculteurs et des procédure liées à l'activité du Service du Développement Rural (SDR) – Ministère de l'agriculture",
-      "Observatoire des espèces emblématiques marines – DIREN",
-      "SIG réseau hydraulique – Commune de Paea",
-      "Ciguatera-online – ILM",
-      "Programme Local de l’Habitat – OPH",
-      "Recensement Général Agricole GPS terrain – SDR",
-      "Recensement Général de la Population (Prérecesement GPS et cartographie opérationnelle de collecte) – ISPF",
-      "Risque de collision des cétacées en méditerranée (modélisation et cartographie) – Ecoocean Institut",
-      "Risque acridien à Madagascar, SIG d’alerte acridienne – CIRAD"
-    ],
-	"legends": {
-		"bppi": "Enquête cartographique GPS Tablettes",
-		"moorea": "SIG Web Qgis-Lizmap",
-		"chsp": "Atlas cartographique automatique pour la gestion de la qualité des eaux de baignade",
-		"teoropaa": "SIG bureautique et atlas cartographique",
-		"tefenua": "Compilation et corrections des données, mise à jour de la base de données et des symbologies (SLD), métadonnées"
-	}
+    "text": "Références...",
+    "references": [
+      {
+        "title": "Filariose lymphatique",
+        "body": "Apppui cartographique dans la mise en œuvre de l’enquête de prévalence de la filariose lymphatique en population generale a moorea et aux iles-sous-le-vent – Ministère de la Santé",
+        "images": [ ]
+      },
+      {
+        "title": "Adressage Moorea-Maiao",
+        "body": "Mise en place d'un SIG web Communal pour la gestion de l'adressage, des déchets et du Recensement – Commune de Moorea-Maiao",
+        "images": [
+          {
+            "url": "../src/assets/moorea_parametres_impression.jpg",
+            "legend": "la classe hein ?"
+          }
+        ]
+      },
+      {
+        "title": "Eaux de baignade",
+        "body": "Réalisation d'un atlas cartographique automatique pour la gestion de la qualité des eaux de baignade - Centre d'Hygiène et de Salubrité Publique",
+        "images": [
+          {
+            "url": "../src/assets/chsp_atlas_eaux_baignade.jpg",
+            "legend": "Atlas cartographique automatique pour la gestion de la qualité des eaux de baignade"
+          }
+        ]
+      },
+      {
+        "title": "Distribution eau Faa'a",
+        "body": "Configuration d'un SIG pour la gestion du réseau de distribution de l'eau sur les communes de Faa'a, Punaauia et Paea – Syndicat d'eau Teoropaa",
+        "images": [
+          {
+            "url": "../src/assets/teoropaa_index.jpg",
+            "legend": "Atlas cartographique automatique pour la gestion de la qualité des eaux de baignade"
+          },
+          {
+            "url": "../src/assets/teoropaa_sig_detail.jpg",
+            "legend": "Atlas cartographique automatique pour la gestion de la qualité des eaux de baignade"
+          },
+          {
+            "url": "../src/assets/teoropaa_sig_detail_infobulle.jpg",
+            "legend": "Atlas cartographique automatique pour la gestion de la qualité des eaux de baignade"
+          },
+          {
+            "url": "../src/assets/teoropaa_sig_geosignets.jpg",
+            "legend": "Atlas cartographique automatique pour la gestion de la qualité des eaux de baignade"
+          }
+
+        ]
+      },
+      {
+        "title": "Tefenu@",
+        "body": "Compilation et mise à jour de la base de données PostGIS et métadonnées des producteurs de données spatialisées pour l'application SIG web Tefenu@ de l’administration de Polynésie française – Service de l'Informatique de la Polynésie française",
+        "images": [
+          {
+            "url": "../src/assets/tefenua_interface_web.jpg",
+            "legend": "Interface web"
+          },
+          {
+            "url": "../src/assets/tefenua_metadonnees.jpg",
+            "legend": "Compilation et corrections des données, mise à jour de la base de données et des symbologies (SLD), métadonnées"
+          }
+        ]
+      },
+      {
+        "title": "Système d'Information Agricole",
+        "body": "Gestion du projet de mise en place du Système d’Informations Agricoles (SIA) pour la gestion des agriculteurs et des procédure liées à l'activité du Service du Développement Rural (SDR) – Ministère de l'agriculture",
+        "images": [ ]
+      },
+      {
+        "title": "Espèces emblématiques marines",
+        "body": "Observatoire des espèces emblématiques marines – DIREN",
+        "images": [ ]
+      },
+      {
+        "title": "SIG réseau hydraulique",
+        "body": "SIG réseau hydraulique – Commune de Paea",
+        "images": [ ]
+      },
+      {
+        "title": "Ciguatera-online",
+        "body": "Ciguatera-online – ILM",
+        "images": [ ]
+      },
+      {
+        "title": "Programme Local de l'Habitat",
+        "body": "Programme Local de l’Habitat – OPH",
+        "images": [ ]
+      },
+      {
+        "title": "Recensement Général Agricole",
+        "body": "Recensement Général Agricole GPS terrain – SDR",
+        "images": [ ]
+      },
+      {
+        "title": "Recensement Général de la Population",
+        "body": "Recensement Général de la Population (Prérecesement GPS et cartographie opérationnelle de collecte) – ISPF",
+        "images": [ ]
+      },
+      {
+        "title": "Risque de collision des cétacées en méditerranée",
+        "body": "Risque de collision des cétacées en méditerranée (modélisation et cartographie) – Ecoocean Institut",
+        "images": [ ]
+      },
+      {
+        "title": "Risque acridien à Madagascar",
+        "body": "Risque acridien à Madagascar, SIG d’alerte acridienne – CIRAD",
+        "images": [
+          {
+            "url": "../src/assets/cirad_madagascar_risque_dominant.png",
+            "legend": "omigod!"
+          }
+        ]
+      }
+    ]
   },
   "resources": {
     "title": "Resources",
     "text": [
       "Ressources humaines et technologiques",
-	  "SIG Mobil - GPS / Tablettes",
+      "SIG Mobil - GPS / Tablettes",
       "GeoOdk",
       "Qfield",
       "ArcPad",
