@@ -199,7 +199,7 @@
           },
           {
             "url": "../src/assets/tefenua_metadonnees.jpg",
-            "legend": "Compilation et corrections des données, mise à jour de la base de données et des symbologies (SLD), métadonnées"
+            "legend": "Compilation"
           }
         ]
       },

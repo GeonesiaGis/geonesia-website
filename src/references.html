@@ -14,8 +14,8 @@
                     <div class="panel-heading">${reference.title}</div>
                     <div class="panel-body">
                         <p>${reference.body}</p>
-                        <div repeat.for="image of reference.images" class="image">
-                            <img src.bind="image.url" style="height: 150px" /><br />
+                        <div repeat.for="image of reference.images" class="image" style="display: inline-block; margin: 0 5px">
+                            <img src.bind="image.url" style="height: 50px" /><br />
                             <span class="legend">${image.legend}</span>
                         </div>
                     </div>
